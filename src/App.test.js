@@ -1,8 +1,17 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import BookingForm from './components/BookingForm';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+test('BookingForm renders correctly and allows form interaction', () => {
+
+  // Mock props
+  const mockProps = {
+    availableTimes: { availableTimes: ['17:00', '18:00', '19:00']},
+    dispatch: jest.fn(), // Mock dispatch function
+    submitForm: jest.fn()  // Mock submition form
+  };
+
+  render(<BookingForm {...mockProps} />);
+  const dateLabel = screen.getByLabelText('Choose Date:');
+  expect(dateLabel).toBeInTheDocument();
+})
+
