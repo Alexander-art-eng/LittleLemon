@@ -1,4 +1,4 @@
-import BookingForm from "./BookingForm";
+import BookingForm from "../BookingForm/BookingForm";
 
 const Booking = (props) => {
     return (
