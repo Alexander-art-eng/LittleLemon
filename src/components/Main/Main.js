@@ -38,9 +38,14 @@ export const initializeTimes = () => {
 };
 
 export const updateTimes = (state, action) => {
-    return {
-        availableTimes: fetchAPI(new Date(action.date))
-    };
+    if (action.type === 'UPDATE_TIMES') {
+        const newTimes = fetchAPI(action.payload);
+        return {
+            ...state,
+            availableTimes: newTimes
+        };
+    }
+    return state;
 };
 
 const Main = () => {
