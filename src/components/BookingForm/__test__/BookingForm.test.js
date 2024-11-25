@@ -7,10 +7,10 @@ describe("BookingForm", () => {
         render(<BookingForm availableTimes={{ availableTimes: [] }} />);
         
         // Test for static labels
-        const dateLabel = screen.getByText("Choose Date:");
-        const timeLabel = screen.getByText("Choose Time:");
-        const guestsLabel = screen.getByText("Number of Guests:");
-        const occasionLabel = screen.getByText("Occasion:");
+        const dateLabel = screen.getByText("Choose Date");
+        const timeLabel = screen.getByText("Choose Time");
+        const guestsLabel = screen.getByText("Number of Guests");
+        const occasionLabel = screen.getByText("Occasion");
         
         expect(dateLabel).toBeInTheDocument();
         expect(timeLabel).toBeInTheDocument();
@@ -19,7 +19,7 @@ describe("BookingForm", () => {
     });
 });
 
-describe("BookingForm", () => {
+describe("Booking Form component", () => {
     const mockProps = {
         availableTimes: { availableTimes: ['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'] },
         dispatch: jest.fn(),
@@ -53,7 +53,7 @@ describe("BookingForm", () => {
     test('occasion select has required attribute', () => {
         render(<BookingForm {...mockProps}/>);
 
-        const occasionSelect = screen.getByLabelText(/occasion/i);
+        const occasionSelect = screen.getByLabelText(/^occasion$/i);
         expect(occasionSelect).toHaveAttribute('required');
     });
 
@@ -73,7 +73,7 @@ describe("BookingForm", () => {
             target: {value: '5'}
         });
 
-        fireEvent.change(screen.getByLabelText(/occasion/i), {
+        fireEvent.change(screen.getByLabelText(/^occasion$/i), {
             target: {value: 'Birthday'}
         });
 
@@ -98,7 +98,7 @@ describe("BookingForm", () => {
             target: {value: '5'}
         });
 
-        fireEvent.change(screen.getByLabelText(/occasion/i), {
+        fireEvent.change(screen.getByLabelText(/^occasion$/i), {
             target: {value: 'Birthday'}
         });
 
@@ -124,7 +124,7 @@ describe("BookingForm", () => {
             target: {value: '11'}
         });
 
-        fireEvent.change(screen.getByLabelText(/occasion/i), {
+        fireEvent.change(screen.getByLabelText(/^occasion$/i), {
             target: {value: 'Birthday'}
         });
         
