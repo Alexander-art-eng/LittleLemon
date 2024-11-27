@@ -1,0 +1,50 @@
+.about-section{
+    margin-bottom: 100px;
+}
+.about-container {
+    display: flex;
+    /* align-items: flex-start; */
+}
+
+.about-text{
+    padding: 10px 13%;
+    flex: 1;
+}
+
+.about-images {
+    position: relative;
+    width: 500px; /* Adjust width as needed */
+}
+
+.about-images img {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.about-images img:last-child {
+    top: 10%;
+    right: 50%;
+}
+
+.about-images img:first-child {
+    bottom: 10%;
+    left: -40%;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #F4CE14;
+}
+.about-location{
+    font-size: 30px;
+    font-weight: bold;
+    color: #495e57;
+}
+.about-text p{
+    width: 400px;
+    font-size: 18px;
+    line-height: 1.5;
+}

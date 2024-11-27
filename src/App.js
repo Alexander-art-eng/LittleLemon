@@ -1,5 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 import './App.css'
+import About from './components/About/About';
 import Nav from "./components/Nav";
 import Main from './components/Main/Main';
 import Menu from './components/Menu';
@@ -14,6 +15,7 @@ const App = () => {
       <Main />
       <Menu />
       <Testimonial />
+      <About />
       <Footer />
     </BrowserRouter>
   );
