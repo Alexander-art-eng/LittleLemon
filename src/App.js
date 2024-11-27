@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Main from './components/Main/Main';
 import Menu from './components/Menu';
 import Footer from './components/Footer';
+import Testimonial from './components/Testimonial/Testimonial';
 
 const App = () => {
   
@@ -12,6 +13,7 @@ const App = () => {
       <Nav />
       <Main />
       <Menu />
+      <Testimonial />
       <Footer />
     </BrowserRouter>
   );

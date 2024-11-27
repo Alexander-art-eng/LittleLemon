@@ -83,7 +83,7 @@ h3 {
 button, .reserve-table {
   background-color: #F4CE14;
   color: black;
-  padding: 14px 18px;
+  padding: 10px 15px;
   border: none;
   text-decoration: none;
   border-radius: 12px;
@@ -203,7 +203,7 @@ legend{
   justify-content: space-between;
 }
 .orderBtn{
-  padding: 5px 12px;
+  padding: 10px 15px;
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: 600;
@@ -218,9 +218,6 @@ footer section{
   margin-top: 12px;
   cursor: pointer;
   width: 100px;
-}
-.company-info p{
-  width: 320px;
 }
 footer h3{
   font-size: 18px;

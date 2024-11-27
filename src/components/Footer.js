@@ -7,9 +7,6 @@ const Footer = () => {
             <section>
                 <div className="company-info">
                     <img src={logo} alt="Little Lemon Logo" />
-                    <p>We are a family-owned Mediterranean restaurant, 
-                    focused on traditional recipes served with a modern twist.
-                    </p>
                 </div>
 
                 <div>
