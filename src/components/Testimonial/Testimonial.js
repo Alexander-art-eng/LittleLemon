@@ -47,7 +47,7 @@ const testimonials = [
 ];
 const Testimonial = () => {
   return (
-    <section className="testimonial-section">
+    <section className="testimonial-section" aria-label="Customer Testimonials">
       <div className="testimonial-container">
         <h2>Testimonials</h2>
         <div className="testimonial-content">
