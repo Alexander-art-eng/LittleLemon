@@ -36,7 +36,13 @@ nav ul li a:hover{
   border-radius: 8px;
   color: white;
   font-weight: bold;
-  text-decoration: underline solid #495E57;
+  text-decoration: none solid #495E57;
+  transition: background-color 0.3s ease;
+}
+nav ul li a:focus{
+  background-color: #495E57;
+  color: white;
+  border-radius: 8px;
 }
 .menu-icon {
   display: none;

@@ -3,6 +3,7 @@ import Booking from "../BookingPage/BookingPage";
 import { useReducer } from "react";
 import ConfirmBooking from "../ConfirmBooking";
 import Header from "../Header";
+import UnderConstruction from "../UnderConstruction/UnderConstruction";
 
 export const seedRandom = function(seed) {
     var m = 2**35 - 31;
@@ -64,6 +65,7 @@ const Main = () => {
                 <Route path="/" element={<Header />} />
                 <Route path="/booking" element={<Booking availableTimes={state} dispatch={dispatch} submitForm={submitForm} />} />
                 <Route path="/confirmed" element={<ConfirmBooking />} />
+                <Route path="/notFound" element={<UnderConstruction />}  />
             </Routes>
         </main>
     );

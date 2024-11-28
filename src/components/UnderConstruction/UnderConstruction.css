@@ -1,0 +1,20 @@
+.under-construction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.title{
+    color: #495E57;
+    font-size: 50px;
+}
+.description{
+    font-size: 60px;
+    font-weight: bold;
+    color: #F4CE14;
+}
+.under-construction img{
+    width: 40%;
+    height: auto;
+}
