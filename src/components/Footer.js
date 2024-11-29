@@ -23,7 +23,7 @@ const Footer = () => {
 
                 <div>
                     <h3>Contacts</h3>
-                    <ul>
+                    <ul className='contact-info'>
                         <li>Address <br /> 123, Towncity, USA</li>
                         <li>Phone Number <br /> +1 4767 7585</li>
                         <li>Email: <br /> little@lemon.com</li>
