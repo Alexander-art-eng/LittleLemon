@@ -7,7 +7,7 @@ const About = () => {
     <section className="about-section" aria-label="About Us" id="about">
       <div className="about-container">
         <div className="about-text">
-          <h1 aria-label="Little Lemon">Little Lemon</h1>
+          <h1>Little Lemon</h1>
           <p className="about-location">Chicago</p>
           <p>
             We are a family-owned Mediterranean restaurant dedicated to bringing
@@ -26,12 +26,10 @@ const About = () => {
           <img
             src={aboutImage}
             alt="Little lemon sous chef pic"
-            aria-label="Little lemon sous chef pic"
           />
           <img
             src={aboutImages}
             alt="Little lemon chefs pic"
-            aria-label="Little lemon chefs pic"
           />        
         </div>
       </div>

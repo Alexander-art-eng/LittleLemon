@@ -3,36 +3,34 @@
 }
 .about-container {
     display: flex;
-    /* align-items: flex-start; */
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .about-text{
     padding: 10px 13%;
-    flex: 1;
 }
-
-.about-images {
-    position: relative;
-    width: 500px; 
+.about-images{
+    /* flex: 1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
-
-.about-images img {
-    position: absolute;
+.about-images img{
     width: 250px;
     height: 250px;
     border-radius: 8px;
+    position: relative;
 }
-
-.about-images img:last-child {
-    top: 10%;
-    right: 50%;
+img[alt="Little lemon chefs pic"]{
+    right: 10px;
+    top: 50px;
 }
-
-.about-images img:first-child {
-    bottom: 10%;
-    left: -40%;
+img[alt="Little lemon sous chef pic"]{
+    left: 30px;
+    bottom: -230px;
 }
-
 h1{
     font-size: 40px;
     font-weight: bold;
@@ -47,4 +45,33 @@ h1{
     width: 400px;
     font-size: 18px;
     line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text, .about-images {
+        padding: 10px;
+    }
+
+    .about-text p {
+        width: 400px;
+    }
+
+    .about-images img {
+        width: 150px;
+        height: 150px;
+        position: relative;
+    }
+    img[alt="Little lemon chefs pic"]{
+        right: 10px;
+        top: 10px;
+    }
+    img[alt="Little lemon sous chef pic"]{
+        left: 30px;
+        bottom: -100px;
+    }
 }

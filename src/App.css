@@ -333,6 +333,15 @@ footer ul li a, .contact-info li{
     width: 100%;
   }
 
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .company-info img{
+    padding: 10px 20%;
+  }
   footer section{
     padding: 10px 8%;
     flex-direction: column;
