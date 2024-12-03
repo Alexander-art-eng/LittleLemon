@@ -1,3 +1,39 @@
+# Little Lemon Restaurant
+
+A modern restaurant website built with React that allows customers to browse the menu, make reservations, and learn more about Little Lemon restaurant.
+
+## Features
+
+- Responsive design that works on desktop and mobile devices
+- Interactive menu with food items and pricing
+- Online reservation system
+- About section with restaurant information
+- Contact details and social media links
+- Clean and intuitive user interface
+
+## Technologies Used
+
+- React
+- React Router for navigation
+- CSS for styling
+- SVG icons for social media
+
+## Project Structure
+
+The main components include:
+
+- `Nav` - Navigation bar component
+- `Main` - Hero/banner section
+- `Menu` - Restaurant menu display
+- `Testimonial` - Customer reviews section  
+- `About` - Restaurant information
+- `Footer` - Contact info and social media links
+
+## Installation
+
+1. Clone the repository
+2. Install dependencies:
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
