@@ -1,0 +1,39 @@
+footer section{
+    padding: 10px 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .company-info img{
+    margin-top: 12px;
+    cursor: pointer;
+    width: 100px;
+  }
+  footer h3{
+    font-size: 20px;
+    color: #F4CE14;
+  }
+  footer ul{
+    padding: 0;
+  }
+  footer ul li{
+    padding: 8px 0;
+  }
+  footer ul li a, .contact-info li{
+    color: #495E57;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .social-icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.social-image{
+    width: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.social-image:hover{
+    transform: scale(0.8);
+}
