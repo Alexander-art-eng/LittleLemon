@@ -32,7 +32,8 @@ The main components include:
 ## Installation
 
 1. Clone the repository
-2. Install dependencies:
+2. Install dependencies using the command:
+npm install
 
 # Getting Started with Create React App
 
